@@ -17,8 +17,8 @@
       <tbody>
         <% @sessions.each do |session| %>
           <tr>
-            <td><%= session.title %></td>
-            <td><%= session.date %></td>
+            <td><%= session.title.st %></td>
+            <td><%= session.date.strftime("%m/%d/%Y") %></td>
             <td><%= session.description %></td>
             <td><%= session.time %></td>
             <td><%= session.exertion %></td>
